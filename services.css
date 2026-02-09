@@ -1,0 +1,56 @@
+/* RESET BOX-SIZING POUR ÉVITER DÉBORDEMENTS */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #afafaf;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER FLEX CONTAINER */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background: #1E3A8A;
+    position: fixed; /* fixe le header en haut */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* reste au-dessus du contenu */
+}
+
+/* LOGO */
+.logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* transition sur l'état normal */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 1em; /* remplace margin pour espacement uniforme */
+    align-items: center;
+}
+.nav-links1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links1 a{
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    margin:0 2em;
+}
+/*fin du css du header*/
