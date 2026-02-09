@@ -1,83 +1,8 @@
 @import url(all.css);
 
-<<<<<<< HEAD
-/* BODY */
-body {
-    background-color: #f6f6f6;
-    font-family: 'Work Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* HEADER FLEX CONTAINER */
-.head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-    background: #1E3A8A;
-    position: fixed; /* fixe le header en haut */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* reste au-dessus du contenu */
-}
-
-/* LOGO */
-.logo {
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    transition: transform 0.3s ease; /* transition sur l'état normal */
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-/* NAV LINKS */
-.nav-links {
-    display: flex;
-    gap: 1em; /* remplace margin pour espacement uniforme */
-    align-items: center;
-}
-.nav-links1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-links1 a{
-  position: relative;
-  margin:0 30px;
-  text-decoration: none;
-  color:  #ffffff; /* adapte si besoin */
-  padding-bottom: 5px;
-}
-
-.nav-links1 a::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ffffff; /* couleur de la ligne */
-  transition: width 0.3s ease;
-}
-
-.nav-links1 a:hover::after{
-  width: 100%;
-}
-
-
-/*fin du css du header*/
-.vid-nav{
-    width:100%;
-    height:auto;
-=======
 .vid-nav {
   width: 100%;
   height: auto;
->>>>>>> 5f751dcd437e9baa0446ed1385f1da798285b598
 }
 video {
   width: 100%;
@@ -98,16 +23,12 @@ video {
   font-size: 3em;
   margin: 0;
 }
-<<<<<<< HEAD
+
 p{
     font-size: 100%;
     margin:0.5em 0;
-=======
-p {
-  font-size: 1.5em;
-  margin: 0.5em 0;
->>>>>>> 5f751dcd437e9baa0446ed1385f1da798285b598
 }
+
 .btn-know {
   width: 30em;
   color: white;
@@ -127,7 +48,6 @@ p {
   font-size: 2em;
   text-align: center;
 }
-<<<<<<< HEAD
     .story::after {
       content: "";
       display: block;
@@ -190,67 +110,6 @@ p {
     height:10em;
     border-radius:30px;
     margin:20px;
-=======
-.story::after {
-  content: "";
-  display: block;
-  width: 60px; /* longè liy lan */
-  height: 4px; /* epesè liy lan */
-  background-color: var(--principal_color); /* koulè liy lan */
-  margin: 8px auto 0; /* espas ant tèks la ak liy lan */
-  border-radius: 2px; /* fè li gen ti kwen wonn */
-}
-.text1 {
-  font-size: 1em;
-  background: #ffffff;
-  padding: 100px;
-  margin: 60px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.484);
-}
-.text1:hover {
-  transform: translateY(-15px) scale(1.05);
-  transition: transform 0.1s ease-in-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.board {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
-}
-.card {
-  background: var(--secondary_color);
-  color: white;
-  padding: 50px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.484);
-  width: 20%;
-  text-align: center;
-}
-.card:hover {
-  transform: translateY(-15px) scale(1.05);
-  transition: transform 0.1s ease-in-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.deux {
-  display: flex;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.484);
-  margin: 0 50px;
-  padding: 3em;
-  border-radius: 20px;
-}
-.deux:hover {
-  transform: translateY(-1px) scale(1.05);
-  transition: transform 0.1s ease-in-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.pdg {
-  width: 20em;
-  height: 20em;
-  border-radius: 30px;
-  margin: 20px;
->>>>>>> 5f751dcd437e9baa0446ed1385f1da798285b598
 }
 .contact{
     display:flex;
