@@ -1,2 +1,16 @@
 @import url(all.css);
+.objectif {
+  display: flex;
+  border: 1px solid white;
+  width: 80%;
+  border-radius: 0px 200px 200px 0px;
+  padding: 20px;
+  background-color: white;
+}
 
+.objectif p {
+  font-size: 1em;
+  text-align: justify;
+  border: 1px solid white;
+  border-radius: 0px 200px 200px 0px;
+}
