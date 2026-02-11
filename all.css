@@ -42,33 +42,22 @@ header {
     transform: scale(1.1);
 }
 
-/* NAV LINKS */
-nav {
-    display: flex;
-    gap: 1em; /* remplace margin pour espacement uniforme */
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav a{
-  position: relative;
-  margin:0 30px;
+.main-header a{
+  position:relative;
+  color:white;
   text-decoration: none;
-  color:  #ffffff; /* adapte si besoin */
-  padding-bottom: 5px;
+  margin: 0 1em;
+  font-size: 1.1em;
 }
-
-.nav-links1 a::after{
-  content: "";
+.main-header a::after{
+  content:"";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ffffff; /* couleur de la ligne */
+  left:0;
+  bottom:-5px;
+  background:white;
+  height:2px;
   transition: width 0.3s ease;
-}
-
-.nav-links1 a:hover::after{
-  width: 100%;
-}
+  width:0;
+  }
+.main-header a:hover::after{
+  width:100%;}
