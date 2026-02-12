@@ -1,13 +1,13 @@
 :root {
-  --main_color: #ebebeb;
-  --secondary_color: #1e3a8a;
+    --main_color: #ebebeb;
+    --secondary_color: #1e3a8a;
 }
 
-/* RESET BOX-SIZING POUR ÉVITER DÉBORDEMENTS */
+/* RESET */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,49 +15,207 @@ body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px; /* Compense le header fixe */
 }
 
-/* EADER FLEX CONTAINER */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
     background: #1E3A8A;
-    position: fixed; /* fixe le header en haut */
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* reste au-dessus du contenu */
+    z-index: 1000;
 }
 
-/* LOGO */
 .logo {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    transition: transform 0.3s ease; /* transition sur l'état normal */
+    transition: transform 0.3s ease;
 }
 
 .logo:hover {
     transform: scale(1.1);
 }
 
-.main-header a{
-  position:relative;
-  color:white;
-  text-decoration: none;
-  margin: 0 1em;
-  font-size: 1.1em;
+.main-header {
+    display: flex;
+    gap: 2em;
 }
-.main-header a::after{
-  content:"";
-  position: absolute;
-  left:0;
-  bottom:-5px;
-  background:white;
-  height:2px;
-  transition: width 0.3s ease;
-  width:0;
-  }
-.main-header a:hover::after{
-  width:100%;}
+
+.main-header a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.main-header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: #f7931e;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.main-header a:hover::after {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: #1E3A8A;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: #f7931e;
+}
+
+/* NEWSLETTER */
+.footer-newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-newsletter h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.footer-newsletter p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.emailput {
+    width: 100%;
+    max-width: 400px;
+    height: 3em;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #f7931e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: scale(1.05);
+    background: #e67e00;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* COPYRIGHT */
+.ps {
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em 1em;
+    }
+    
+    .main-header {
+        gap: 1em;
+        font-size: 0.9em;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-footer {
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .emailput {
+        width: 100%;
+    }
+}
